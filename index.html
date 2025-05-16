@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logoipsum</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Site Logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a hrefmax-width: 1200px;="#about">OUR SCREENS</a></li>
+          <li><a href="#schedule">SCHEDULE</a></li>
+          <li><a href="#library">MOVIE LIBRARY</a></li>
+          <li class="tablet-hide"><a href="#contact">LOCATION & CONTACT</a></li>
+          <li class="hamburger-icon">
+            <a href="javascript:void(0)" id="openMenu">
+              <img src="images/burger_menu.svg" alt="Hamburger Menu"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="menuOverlay" class="menu-overlay">
+      <span id="closeMenu" class="close-btn">&times;</span>
+      <ul class="overlay-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">OUR SCREENS</a></li>
+        <li><a href="#schedule">SCHEDULE</a></li>
+        <li><a href="#library">MOVIE LIBRARY</a></li>
+        <li><a href="#contact">LOCATION & CONTACT</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- <div class="banner">
+        <img src="images/banner.jpg" alt="banner" />
+      </div> -->
+
+      <div class="video-banner">
+        <video id="heroVideo" autoplay muted loop>
+          <source src="videos/banner_vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="intro">
+        <h1>MOVIE LIBRARY</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+      </div>
+
+      <section id="movies">
+        <div class="top">
+          <h2>Collect your favourites</h2>
+          <div class="search-box">
+            <img src="images/magnifier.svg" alt="Magnifier Icon" />
+            <input type="text" placeholder="Search title and add to grid" />
+            <ul id="suggestions"></ul>
+          </div>
+        </div>
+        <div class="cards" id="movie-grid">
+          <div class="placeholder">Your favourites will appear here</div>
+        </div>
+      </section>
+      <div class="contact">
+        <h2>How to reach us</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur.</p>
+      </div>
+      <div class="row">
+        <div class="form-container">
+          <form id="contactForm" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="first_name" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name*</label>
+                <input type="text" id="lname" name="last_name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telephone (eg: +94711234567)</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message*</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <p>*required fields</p>
+            <div class="form-group">
+              <div class="checkbox-group">
+                <label for="agree">
+                  <input
+                    type="checkbox"
+                    name="agree"
+                    id="agree"
+                    value="yes"
+                    required
+                  />
+                  I agree to the&nbsp;<a href="#Terms">Terms & Conditions</a>
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <input id="submit" type="submit" value="SUBMIT" />
+            </div>
+            <div id="form-message"></div>
+          </form>
+        </div>
+
+        <div class="location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506968.9364951885!2d79.24859358906251!3d6.927035500000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259113a63055d%3A0x8f4e038124048b42!2sColombo%20Lotus%20Tower!5e0!3m2!1sen!2slk!4v1747367121354!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="location of Colombo Lotus tower"></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="address-social-row">
+        <div class="address">
+          <p>IT Group</p>
+          <p>C. Salvador de Madariaga, 1<br />28027 Madrid<br />Spain</p>
+        </div>
+        <div class="social">
+          <span>Follow us on</span>
+          <span>
+            <a href="#twitter"
+              ><img src="images/twitter.svg" alt="Twitter"
+            /></a>
+          </span>
+          <span>
+            <a href="#youtube"
+              ><img src="images/youtube.svg" alt="Youtube"
+            /></a>
+          </span>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>Copyright © 2022 IT Hote ls. All rights reserved.</p>
+        </div>
+        <div class="acknowledgement">
+          Photos by Felix Mooneeram
+          <span>& <a href="#SergeKutuzov">Serge Kutuzov</a></span>
+          <span>on <a href="#unsplash">Unsplash</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
