@@ -10,7 +10,7 @@
 - automatic search results while typing
 - remove the favorites
 - Form for user feedback
-- automatic email service to send a copy of the submission to the user and admins
+- automated email service to send a copy of the submission to the user and admins
 - brings an overlay menu by clicking the hamburgur menu icon
 - data validation in backend
 - save user feedback in a json file
